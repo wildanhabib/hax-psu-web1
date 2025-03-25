@@ -6,11 +6,138 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Demonstration for hax-psu-web">
-
+  <link rel="canonical" href="https://hax.psu.edu/" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1e407c" />
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Press+Start+2P&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet';"
+  />
   <style>
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
+      font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+      --primary-color-1: #001e44;
+      --primary-color-1-50: #001e4450;
+      --primary-color-2: #1e407c;
+      --primary-color-3: #ffffff;
+      --secondary-color-1: #96bee6;
+      --secondary-color-2: #009cde;
+      --bg-color-1: #ffffff;
+      --bg-color-2: #eef3f7;
+      --link-color-1: #005fa9;
+      --link-color-2: #ccdae6;
+      background-color: var(--primary-color-1);
+    }
+    hax-psu:not(:defined) {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary-color-1);
+    }
+    hax-psu:not(:defined) h1 {
+      margin: 0 auto;
+      color: white;
+      font-size: 48px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 4px;
+      font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding-bottom: 8px;
+      line-height: 1em;
+      text-align: left;
+      font-style: normal;
+      text-transform: none;
+      text-decoration: none;
+      padding-right: 8vw;
+    }
+
+    hax-psu:not(:defined) h1 span.create,
+    hax-psu:not(:defined) h1 span.hax {
+      font-weight: bold;
+      font-size: 48px;
+      font-style: italic;
+      font-family: "Press Start 2P", Roboto, Helvetica, Arial, Lucida, sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 4px;
+      line-height: 36px;
+      text-align: left;
+    }
+    hax-psu:not(:defined) .load-wrapper {
+      padding: 0px 15%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      z-index: 3;
+      width: 70%;
+      max-width: 1080px;
+      margin: 0px auto;
+    }
+    hax-psu:not(:defined) .load-wrapper .psu-entice {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.533);
+      padding: 8px;
+      font-size: 16px;
+    }
+    hax-psu:not(:defined) .load-wrapper .entice-wrapper {
+      display: flex;
+      padding: 0px;
+      margin: 0px 0px 16px;
+      width: 70%;
+      padding: 0 18%;
+    }
+    hax-psu:not(:defined) .load-wrapper a {
+      display: inline-block;
+      text-decoration: none;
+    }
+    hax-psu:not(:defined) .load-wrapper .btn {
+      display: block;
+      border-width: 2px;
+      border-color: var(--link-color-1);
+      border-radius: 0px;
+      line-height: 36px;
+      background-color: var(--link-color-1);
+      padding: 10px 50px 10px 30px;
+      text-transform: uppercase;
+      color: white;
+      font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+      font-style: italic;
+      font-weight: 700;
+      transition: color 300ms ease 0ms, background-color 300ms ease 0ms, border 300ms ease;
+      margin: 0 18%;
+      padding: 8px;
+      font-size: 20px;
+      width: 150px;
+      cursor: pointer;
+    }
+    hax-psu:not(:defined) .load-wrapper .btn2 {
+      color: black;
+      border-color: var(--secondary-color-1);
+      border-radius: 0px;
+      line-height: 36px;
+      background-color: var(--secondary-color-1);
+
+    }
+    hax-psu:not(:defined) .load-wrapper .btn:focus,
+    hax-psu:not(:defined) .load-wrapper .btn:hover {
+      background-color: var(--primary-color-1);
+      border-color: white;
+      color: white;
+    }
+    hax-psu:not(:defined) .load-wrapper .btn-wrapper {
+      margin: 0 auto;
+      padding-right: 28vw;
     }
 
   </style>
