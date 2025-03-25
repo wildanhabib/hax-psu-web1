@@ -74,5 +74,6 @@
     },
     "hax": {
         "cli": true
-    }
+    },
+  "customElements": "custom-elements.json"
 }
