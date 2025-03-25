@@ -694,6 +694,13 @@ export class HaxPsu extends DDD {
     this.title = 'HAX @ PSU';
     this.examples = [
       {
+        title: 'Google',
+        type: "Invent Penn State",
+        description: 'Launchbox',
+        url: 'https://google.com/',
+        image: 'https://google.com/',
+      },
+      {
         title: 'Customer Discovery 101',
         type: "Invent Penn State",
         description: 'Launchbox',
@@ -815,15 +822,15 @@ export class HaxPsu extends DDD {
       </div>
     </header>
     <main>
-      <page-section id="section-1" full class="section top" filter accent-color="blue" fold scroller scroller-label="Let's learn about HAX" image="${makeUrl('images/lion-statue.jpg')}">
-        <h1><span class="text">Create <future-terminal-text white glitch class="create">WEBSITES</future-terminal-text></span>
+      <page-section id="section-1" full class="section top" filter accent-color="blue" fold scroller scroller-label="Let's learn about HAX" image="${makeUrl('images/splash.jpg')}">
+        <h1><span class="text">Createees <future-terminal-text white glitch class="create">WEBSITESsss</future-terminal-text></span>
           <div>
-            <span class="text">with </span><future-terminal-text glitch class="hax">HAX</future-terminal-text>
+            <span class="text">with </span><future-terminal-text glitch class="hax">HAXISSSS</future-terminal-text>
           </div>
         </h1>
         <p slot="entice">Part of <strong>Penn State</strong>?</p>
         <simple-cta slot="entice" id="psubtn" link="/login.php">Login</simple-cta>
-        <simple-cta hide-icon data-primary="13" slot="buttons" link="https://hax.cloud" target="_blank">Public Demo</simple-cta>
+        <simple-cta hide-icon data-primary="13" slot="buttons" link="https://hax.cloud" target="_blank">Public Demoooo</simple-cta>
         <simple-cta hide-icon data-primary="18" slot="buttons" link="https://haxtheweb.org/">Docs</simple-cta>
       </page-section>
       <page-section id="section-2" class="section" scroller scroller-label="By the numbers">
@@ -838,9 +845,9 @@ export class HaxPsu extends DDD {
             <simple-cta data-primary="8" data-accent="3" hotline filled outlined slot="buttons" link="/login.php">Get Started now!</simple-cta>
           </p>
           <h4 data-design-treatment="horz-25p" data-primary="18">Know terminal?</h4>
-          <pre><code><strong>npm install --global @haxtheweb/create
+          <!-- <pre><code><strong>npm install --global @haxtheweb/create
 hax start
-</strong></code></pre>
+</strong></code></pre> -->
         </div>
       </page-section>
       <page-section id="section-3" class="section">
@@ -932,18 +939,12 @@ hax start
           <li><a href="https://haxtheweb.org/the-gallery-of-online-excellence">The Gallery of Online Excelence</a></li>
         </ul>
       </page-section>
-        <page-section id="section-9" class="section">
+
+      <page-section id="section-9" class="section">
       <div class="section-style-1">
           <h2>Frequently Asked Questions</h2>
           <hr class="side-line" />
-          <details>
-            <summary>
-              Who can use HAX?
-            </summary>
-            <p>
-              Anyone, anywhere! Thanks to HAX being open source, all you need is a web server and a domain name to get started. We also support publishing directly to GitHub pages and other static publishing tools for advanced developer use-cases. If you are part of Penn State though you can just click <a href="/login.php">log in</a> to get started immediately!
-            </p>
-          </details>
+
           <details>
             <summary>
               Who supports HAX?
