@@ -4,14 +4,16 @@ import { rollupPluginHTML as html } from '@web/rollup-plugin-html';
 import { importMetaAssets } from '@web/rollup-plugin-import-meta-assets';
 import esbuild from 'rollup-plugin-esbuild';
 
+const inputFile = 'index.html';
+const outputDir = 'public';
+
 export default {
-  input: 'index.html',
+  input: inputFile,
   output: {
     entryFileNames: '[hash].js',
-    chunkFileNames: '[hash].js',
+    format: 'esm',
     assetFileNames: '[hash][extname]',
-    format: 'es',
-    dir: 'public',
+    dir: outputDir,
   },
   preserveEntrySignatures: false,
 
